@@ -1,0 +1,7 @@
+.cart-quantity {
+    border: 1px solid #b6b3b3;
+    outline-color: black;
+    text-align: center;
+    font-size: 1rem;
+    width: 2.4rem;
+}

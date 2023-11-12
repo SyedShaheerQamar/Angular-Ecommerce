@@ -1,0 +1,102 @@
+<!-- <div class="justify-content-center container">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <h1>Marketo.</h1>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <h1>CART</h1>
+        </ng-template>
+    </p-menubar>
+</div> -->
+
+<!-- <div class="container">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <h1>Marketo.</h1>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <button pButton type="button" 
+            > 
+    </button> 
+        </ng-template>
+    </p-menubar>
+</div> -->
+
+<div class="container mt-2">
+    <nav class="navbar navbar-expand-lg navbar-light text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark mx-0 mx-md-5 col" href="index.html"><strong>Marketo.</strong></a>
+        <button class="navbar-toggler mx-3 mx-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col" id="navbarNav">
+          <ul class="navbar-nav text-dark">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-5">
+              <div class="pad">
+                <a class="nav-link" routerLink="/shop">Shop</a>
+              </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="wishlist.html">
+              <!-- <span class="notify-badge">0</span> -->
+              <img src="/assets/images/heart.svg" alt="Bootstrap" width="30" height="30">
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand cart-button">
+              <!-- <span class="notify-badge">0</span> -->
+              <img (click)="SingleProductDetail()" src="/assets/images/cart.svg" alt="Bootstrap" width="30" height="30">
+            </a>
+            <!-- <div class="totalQuan">{{ cartItems }}</div> -->
+              <div class="cart">
+                  <h2 class="cart-title">Your Cart</h2>
+                  <div class="cart-content" *ngIf="showProd">
+                    <div *ngFor="let prod of prodDetail">
+                      <img src="{{ prod.img }}" class="w-75" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">{{ prod.title }}</div>
+                            <div class="cart-price">{{ prod.price }}</div>
+                            <input type="number" [(ngModel)]="value" class="cart-quantity" (click)="CheckQuantity( prod.id )">
+                        </div>
+                        <i class="fa fa-trash-o cart-remove" (click)="RemoveFromCart( prod.id )"></i>
+                    </div>
+                  </div>
+
+                  <div class="total">
+                      <div class="total-title">Total</div>
+                      <div class="total-price">${{total}}</div>
+                  </div>
+
+                  <!-- <a href=""></a> -->
+                  <button type="button" class="btn-buy" routerLink="checkout">
+                      Buy Now
+                  </button>
+
+                  <i class="fa fa-close" style="font-size:24px" (click)="CloseSlider()" id="close-cart"></i>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+  </div>

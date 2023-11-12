@@ -1,0 +1,88 @@
+.text-bg-primary {
+    background-color: green;
+}
+
+.rounded-pill {
+    background-color: lightgray;
+    margin-top: -20px;
+}
+
+.bgyel {
+    background-color: rgb(231, 231, 39);
+}
+
+.mydrop {
+    width: 250px;
+    height: 55px;
+    background-color: #fed700;
+    border: none;
+}
+
+.mydrop:hover {
+    background-color: #fed700;
+}
+
+.mydrop:focus {
+    background-color: #fed700;
+}
+
+.mydrop2 {
+    background-color: transparent;
+}
+
+.mydrop2:hover {
+    background-color: transparent;
+}
+
+.mydrop2:focus {
+    background-color: transparent;
+    border: transparent;
+}
+
+.myhei {
+    height: 25px;
+}
+
+.mybtn {
+    background-color: #fed700;
+    height: 55px;
+    width: 70px;
+}
+
+.mybtn2 {
+    width: 250px;
+    height: 55px;
+    color: blue;
+}
+
+.mybtn2:hover {
+    background-color: black;
+}
+
+.notify-badge{
+    position: absolute;
+    background: gray;
+    height:1rem;
+    top:1.2rem;
+    right:1.5rem;
+    width:1rem;
+    text-align: center;
+    /* line-height: 2rem;; */
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+}
+
+.notify-badge2 {
+    position: absolute;
+    background: yellow;
+    height:1rem;
+    top: 1.2rem;
+    right:1.5rem;
+    width:1rem;
+    text-align: center;
+    /* line-height: 2rem;; */
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+}

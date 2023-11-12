@@ -1,0 +1,47 @@
+
+table {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-head {
+    color: white;
+    background-color: #18bdfe;
+}
+
+.summary {
+    background-color: #f2f2f2;
+    width: 45%;
+    margin-left: 20px;
+}
+
+.detail {
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #18bdfe;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: #fed700;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.checkout {
+    width: 100%;
+    background-color: #18bdfe;
+}
+
+button:hover, .checkout:hover {
+    background-color: #333;
+}

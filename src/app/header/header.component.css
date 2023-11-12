@@ -1,0 +1,26 @@
+.ftsize {
+    font-size: 13px;
+}
+
+.navbar-custom {
+    height: 50px;
+}
+
+.mybtm {
+    margin-top: -15px;
+}
+
+.myheight {
+    height: 19px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    
+}
+
+.nav-link {
+    color : black;
+    font-family: rubik,Sans-serif;
+    font-size: 14px;
+}

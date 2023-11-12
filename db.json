@@ -1,0 +1,129 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "3d Glass",
+      "price": 540,
+      "img": "/assets/images/3DVR.jpg",
+      "img2": "/assets/images/3DVR.jpg",
+      "img3": "/assets/images/3DVR.jpg",
+      "img4": "/assets/images/3DVR.jpg"
+    },
+    {
+      "id": 2,
+      "title": "3d VR Glass",
+      "price": 245,
+      "img": "/assets/images/vr1.jpg",
+      "img2": "/assets/images/vr2.jpg",
+      "img3": "/assets/images/vr3.jpg",
+      "img4": "/assets/images/vr4.jpg"
+    },
+    {
+      "id": 3,
+      "title": "7th Generation",
+      "price": 520,
+      "img": "/assets/images/laptop.png",
+      "img2": "/assets/images/laptop.png",
+      "img3": "/assets/images/laptop.png",
+      "img4": "/assets/images/laptop.png"
+    },
+    {
+      "id": 4,
+      "title": "Apple iPhone 6s",
+      "price": 299,
+      "img": "/assets/images/iphone6.png",
+      "img2": "/assets/images/iphone6.png",
+      "img3": "/assets/images/iphone6.png",
+      "img4": "/assets/images/iphone6.png"
+    },
+    {
+      "id": 5,
+      "title": "Apple iPhone 7s",
+      "price": 660,
+      "img": "/assets/images/iphone7.png",
+      "img2": "/assets/images/iphone7.png",
+      "img3": "/assets/images/iphone7.png",
+      "img4": "/assets/images/iphone7.png"
+    },
+    {
+      "id": 6,
+      "title": "Bevigac Gamepad",
+      "price": 220,
+      "img": "/assets/images/gamepad.png",
+      "img2": "/assets/images/gamepad.png",
+      "img3": "/assets/images/gamepad.png",
+      "img4": "/assets/images/gamepad.png"
+    },
+    {
+      "id": 7,
+      "title": "Black Solid Color Full Sleeve",
+      "price": 29,
+      "img": "/assets/images/fullsleve.png",
+      "img2": "/assets/images/fullsleve.png",
+      "img3": "/assets/images/fullsleve.png",
+      "img4": "/assets/images/fullsleve.png"
+    },
+    {
+      "id": 8,
+      "title": "Bluetooth Gamepad",
+      "price": 199,
+      "img": "/assets/images/bluetooth.png",
+      "img2": "/assets/images/bluetooth.png",
+      "img3": "/assets/images/bluetooth.png",
+      "img4": "/assets/images/bluetooth.png"
+    },
+    {
+      "id": 9,
+      "title": "Bluetooth Speaker",
+      "price": 70,
+      "img": "/assets/images/speaker.jpg",
+      "img2": "/assets/images/speaker.jpg",
+      "img3": "/assets/images/speaker.jpg",
+      "img4": "/assets/images/speaker.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Braclet Watch",
+      "price": 40,
+      "img": "/assets/images/watch.png",
+      "img2": "/assets/images/watch.png",
+      "img3": "/assets/images/watch.png",
+      "img4": "/assets/images/watch.png"
+    },
+    {
+      "id": 11,
+      "title": "Branch Apple",
+      "price": 12,
+      "img": "/assets/images/apple.png",
+      "img2": "/assets/images/apple.png",
+      "img3": "/assets/images/apple.png",
+      "img4": "/assets/images/apple.png"
+    },
+    {
+      "id": 12,
+      "title": "Camera Drone",
+      "price": 340,
+      "img": "/assets/images/drone.png",
+      "img2": "/assets/images/drone.png",
+      "img3": "/assets/images/drone.png",
+      "img4": "/assets/images/drone.png"
+    }
+  ],
+  "cart": [
+    {
+      "title": "Apple iPhone 6s",
+      "img": "/assets/images/iphone6.png",
+      "price": 299,
+      "quantity": 2,
+      "id": 4
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "name": "Shaheer",
+      "email": "sha123@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

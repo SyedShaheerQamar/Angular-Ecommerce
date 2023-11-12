@@ -1,0 +1,85 @@
+<div class="logbg p-4 mt-5">
+    <div class="container">
+        <p class="text-secondary ms-5"><a href="index.html" class="myhomepg text-secondary">Home</a> > Checkout</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row fs-6">
+        Thank you. Your order has been received.
+    </div>
+    <div class="row mt-4" style="font-size: 13px;">
+        <div class="col-2">
+            Order Number <br>
+            <b>4135</b>
+        </div>
+        <div class="col-2" style="margin-left: -6%;">
+            Date <br>
+            <b>{{ date | date: 'shortDate'  }}</b>
+        </div>
+        <div class="col-2" style="margin-left: -7%;">
+            Total <br>
+            <b style="color: blue;">${{ total }}</b>
+        </div>
+        <div class="col-2" style="margin-left: -7%;">
+            Payment Method <br>
+            <b>Cash on delivery</b>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row fs-6">
+        Pay with cash upon delivery.
+    </div>
+    <div class="row">
+        <b class="fs-2">Order Detail</b>
+    </div>
+    <div class="row">
+        <table border="1">
+            <thead>
+                <tr class="text-center">
+                    <th class="p-3">Products</th>
+                    <th class="p-3">Total</th>
+                </tr>
+            </thead>
+            <tbody class="border-1 text-center">
+                <tr *ngFor="let cart of arr">
+                    <td class="py-3"><span style="cursor: pointer; color: blue;" (click)="ShowProduct( cart.id )">{{ cart.title }}</span> x {{ cart.quantity }}</td>
+                    <td class="py-3" style="color: blue;">${{ cart.price }}</td>
+                </tr>
+                <tr>
+                    <td class="py-3"><b>Subtotal</b></td>
+                    <td class="py-3" style="color: blue;"><b>${{ total }}</b></td>
+                </tr>
+                <tr>
+                    <td class="py-3"><b>Payment Method</b></td>
+                    <td class="py-3"><b>Cash on delivery</b></td>
+                </tr>
+                <tr>
+                    <td class="py-3"><b>Total</b></td>
+                    <td class="py-3" style="color: blue;"><b>${{ total }}</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="card">
+    <p-table  styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }"> -->
+        <!-- <ng-template pTemplate="caption"> Header </ng-template> -->
+        <!-- <ng-template pTemplate="header">
+            <tr>
+                <th class="text-center">Products</th>
+                <th class="text-center">Total</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body">
+            <tr>
+                <td>Sample</td>
+                <td>Price</td>
+            </tr>
+        </ng-template> -->
+        <!-- <ng-template pTemplate="summary"> Footer </ng-template> -->
+    <!-- </p-table>
+</div> -->

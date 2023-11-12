@@ -1,0 +1,38 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-3 d-none d-md-block">
+        <button class="btn btn-secondary dropdown-toggle ms-3 ms-lg-5 mydrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="col-4 col-lg-5 border d-none d-md-block">
+        <form class="d-flex p-2" role="search">
+          <input class="form-control me-2 border border-0 FilterText" placeholder="Find your product" [(ngModel)]="title" [ngModelOptions]="{standalone: true}">
+          <div class="vr"></div>
+          <button class="btn btn-secondary dropdown-toggle ms-3 mydrop2 text-dark border border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            All Categories
+          </button>
+          <ul class="dropdown-menu bg-primary catbg" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </form>
+      </div>
+      <div class="col d-none d-md-block">
+        <button class="btn btn-outline-success mybtn" type="submit" (click)="checkThis()">
+          <img src="/assets/images/search.svg" alt="" width="30" height="24">
+        </button>
+      </div>
+      <div class="col d-none d-md-block">
+        <button class="btn btn-outline-success mybtn2 me-5" type="submit">
+          <strong>Black Friday</strong> <br> Get 45% Off
+        </button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<div class="logbg p-4 mt-5">
+    <div class="container">
+      <p class="text-secondary ms-5"><a href="index.html" class="myhomepg text-secondary">Home</a> > Login</p>
+    </div>
+</div>
+
+<main class="container p-md-5">
+      <h2>Login</h2>
+      <div class="container border p-4 text-secondary p-md-5">
+        <div *ngIf="check" style="color: red;">
+          Invalid Credentails
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Username or email address</p>
+            <input class="col-12 mt-2 fs-4" type="text" name="" id="" [(ngModel)]="username">
+            <p class="mt-4">Password</p>
+            <input class="col-12 mt-2 fs-4" type="password" name="" id="" [(ngModel)]="password">
+            <input type="checkbox" id="login" name="login" value="Login" class="mt-4">
+            <label for="login">Remember Me</label><br>
+            <button class="btn btn-outline-success mybg1 col-12 mt-4 mb-4" type="submit" (click)="LoginValidation()">
+                Log In
+            </button>
+            <a href="#" class="my-4">Lost your password?</a>
+          </div>
+        </div>
+      </div>
+</main>

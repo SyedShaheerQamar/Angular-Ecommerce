@@ -1,0 +1,143 @@
+<div class="mx-0 mx-md-5 px-0 px-md-5 mt-5">
+    <div class="row">
+        <hr style="height: 5px; background-color: darkblue;">
+    </div>
+    <div class="row logbg py-3 px-2 mycartinfo">
+          <p>Have a coupon? <a (click)="GetCouponCode()" style="cursor: pointer;" class="text-primary">Click here to enter your code</a></p>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <form [formGroup]="myForm" class="col-12 col-md-6">
+      <h2>Billing Details</h2>
+      <div class="row mt-4">
+        <div class="col">
+          First Name <span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="fname">
+          <div *ngIf="myForm.get('fname')?.invalid && check" style="color: red;">
+            Please provide a first name.
+          </div>
+        </div>
+        <div class="col">
+          Last Name <span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="lname">
+          <div *ngIf="myForm.get('lname')?.invalid && check" style="color: red;">
+            Please provide a last name.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          Company name (optional)
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="company">
+        </div>
+      </div>
+      <!-- <div class="row mt-4">
+        <div class="col">
+          Country / Region<span style="color: red;">*</span>
+          <select class="form-select col-12 mt-3" aria-label="Default select example">
+            <option selected>United States</option>
+            <option value="1">Pakistan</option>
+            <option value="2">India</option>
+            <option value="3">Iran</option>
+            <option value="3">Yemen</option>
+            <option value="3">Qatar</option>
+        </select>
+        </div>
+      </div> -->
+      <div class="row mt-4">
+        <div class="col">
+          Street Address<span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-6 mt-3 p-2" placeholder="House number and street name" formControlName="house">
+          <div *ngIf="myForm.get('house')?.invalid && check" style="color: red;">
+            Please provide a house number.
+          </div>
+          <input type="text" class="col-12 fs-6 mt-3 p-2" placeholder="Apartment, suite, unit, etc. (optional)">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          Town / City<span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="town">
+          <div *ngIf="myForm.get('town')?.invalid && check" style="color: red;">
+            Please provide a town/city.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          ZIP Code<span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="zip">
+          <div *ngIf="myForm.get('zip')?.invalid && check" style="color: red;">
+            Please provide a 5-Digit ZIP Code.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          Phone<span style="color: red;">*</span>
+          <input type="text" class="col-12 fs-4 mt-3" formControlName="phone">
+          <div *ngIf="myForm.get('phone')?.invalid && check" style="color: red;">
+            Please provide a phone number.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          Email Address<span style="color: red;">*</span>
+          <input type="email" class="col-12 fs-4 mt-3" formControlName="email">
+          <div *ngIf="myForm.get('email')?.invalid && check" style="color: red;">
+            Please provide a email.
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="col-12 col-md-6">
+      <h2>Your Order</h2>
+      <div class="col">
+        <table>
+          <thead>
+            <tr class="border-1">
+              <td class="border-1 p-3 fw-bold">Product</td>
+              <td class="fw-bold">Subtotal</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cart of arr">
+              <td class="border-1 ">
+                <img src="{{ cart.img }}" style="width: 100px;" alt="">
+              </td>
+              <td class="border-1">${{ cart.price }} x {{ cart.quantity }}</td>
+            </tr>
+            <!-- <tr>
+              <td class="border-1 p-2 fw-bold">Subtotal</td>
+              <td class="border-1"></td>
+            </tr> -->
+            <tr>
+              <td class="border-1 p-2 fw-bold">Total</td>
+              <td class="border-1">${{ total }}</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="row mx-1" style="background-color: #d3ced2;">
+        <div class="col p-3">
+          Cash on delievery
+          <div class="row mt-3 ">
+            <div class="col p-2" style="background-color: #515151;">
+              Pay with cash upon delivery.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-outline-success mt-4 bgyel text-white fw-bold border-0" type="submit" (click)="onSubmit(myForm)">
+                Place Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
