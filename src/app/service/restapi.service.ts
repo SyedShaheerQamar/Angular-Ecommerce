@@ -8,8 +8,8 @@ export class RestapiService {
 
   constructor(private http:HttpClient) { }
 
-  GetProduct() {
-    return this.http.get("http://localhost:3000/product");
+  GetProduct(title: any) {
+    return this.http.get("http://localhost:3000/product?title_like="+title);
   }
 
   GetSingleProduct(id:any) {

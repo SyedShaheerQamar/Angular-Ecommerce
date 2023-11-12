@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessageServiceService } from '../service/message-service.service';
 
 @Component({
   selector: 'app-category',
@@ -9,9 +10,10 @@ export class CategoryComponent {
 
   title = "";
 
+  constructor(private msgService: MessageServiceService) { }
+
   checkThis(){
-    console.log(this.title);
-    
+    this.msgService.changeMessage(this.title);
   }
 
   

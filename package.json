@@ -23,6 +23,7 @@
     "primeicons": "^6.0.1",
     "primeng": "^16.6.0",
     "rxjs": "~7.8.0",
+    "simple-ng-loader": "^2.0.0",
     "smooth-scrollbar": "^8.8.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
